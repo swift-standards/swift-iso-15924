@@ -234,6 +234,6 @@ extension ISO_15924.Numeric: CaseIterable {
         .`996`,
         .`997`,
         .`998`,
-        .`999`
+        .`999`,
     ]
 }

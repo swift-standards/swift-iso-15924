@@ -1,9 +1,10 @@
 // ISO15924Tests.swift
 // ISO 15924 Tests
 
-import Testing
-@testable import ISO_15924
 import Foundation
+import Testing
+
+@testable import ISO_15924
 
 @Suite("ISO 15924 Script Codes")
 struct ISO15924Tests {

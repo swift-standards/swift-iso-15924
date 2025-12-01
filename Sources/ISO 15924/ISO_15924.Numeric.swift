@@ -3,8 +3,8 @@
 //
 // Numeric script code (ISO 15924 numeric)
 
-import Standards
 import INCITS_4_1986
+import Standards
 
 extension ISO_15924 {
     /// Numeric script code per ISO 15924 numeric

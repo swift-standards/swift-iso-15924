@@ -234,6 +234,6 @@ extension ISO_15924.Alpha4: CaseIterable {
         .Zsym,
         .Zxxx,
         .Zyyy,
-        .Zzzz
+        .Zzzz,
     ]
 }

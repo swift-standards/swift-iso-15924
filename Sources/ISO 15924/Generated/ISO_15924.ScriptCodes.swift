@@ -235,7 +235,8 @@ extension ISO_15924 {
         .Xsux: .`020`,  // Cuneiform, Sumero-Akkadian
         .Yezi: .`192`,  // Yezidi
         .Yiii: .`460`,  // Yi
-        .Zanb: .`339`,  // Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)
+        // Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig)
+        .Zanb: .`339`,
         .Zinh: .`994`,  // Code for inherited script
         .Zmth: .`995`,  // Mathematical notation
         .Zsye: .`993`,  // Symbols (Emoji variant)
