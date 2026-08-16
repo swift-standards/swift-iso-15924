@@ -3,9 +3,8 @@
 //
 // Static accessors for all ISO 15924 numeric script codes
 //
-// ⚠️ AUTO-GENERATED FILE - DO NOT EDIT DIRECTLY
-// Generated from JSON data files using Scripts/generate-script-codes.swift
-// To update: modify JSON files in Resources/ then run: swift Scripts/generate-script-codes.swift
+// Generated snapshot of the ISO 15924 script-code registry.
+// Update the declarations together from the authoritative registry.
 
 extension ISO_15924.Numeric {
     /// Proto-Cuneiform

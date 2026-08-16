@@ -45,9 +45,6 @@ let package = Package(
             dependencies: [
                 .standards,
                 .ascii,
-            ],
-            resources: [
-                .copy("Resources")
             ]
         ),
         .testTarget(
