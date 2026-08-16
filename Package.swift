@@ -13,7 +13,7 @@ extension Target.Dependency {
     static var standards: Self {
         .product(name: "Standard Library Extensions", package: "swift-standard-library-extensions")
     }
-    static var incits_4_1986: Self {
+    static var ascii: Self {
         .product(name: "ASCII Primitives", package: "swift-ascii-primitives")
     }
 }
@@ -44,7 +44,7 @@ let package = Package(
             name: "ISO 15924",
             dependencies: [
                 .standards,
-                .incits_4_1986,
+                .ascii,
             ],
             resources: [
                 .copy("Resources")

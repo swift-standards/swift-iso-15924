@@ -1,3 +1,5 @@
+// swift-format-ignore-file: AlwaysUseLowerCamelCase
+//
 // ISO_15924.Alpha4+StaticAccessors.swift
 // ISO 15924
 //
