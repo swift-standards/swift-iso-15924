@@ -3,9 +3,8 @@
 //
 // Script code data and mappings
 //
-// ⚠️ AUTO-GENERATED FILE - DO NOT EDIT DIRECTLY
-// Generated from JSON data files using Scripts/generate-script-codes.swift
-// To update: modify JSON files in Resources/ then run: swift Scripts/generate-script-codes.swift
+// Generated snapshot of the ISO 15924 script-code registry.
+// Update the declarations together from the authoritative registry.
 
 import Standard_Library_Extensions
 
