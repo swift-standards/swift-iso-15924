@@ -1,251 +1,237 @@
-// ISO_15924.ScriptCodes.swift
-// ISO 15924
-//
-// Script code data and mappings
-//
-// Generated snapshot of the ISO 15924 script-code registry.
-// Update the declarations together from the authoritative registry.
-
 import Standard_Library_Extensions
 
 extension ISO_15924 {
-    /// Mapping from ISO 15924 alpha-4 (4-letter) to numeric codes
-    ///
-    /// Complete ISO 15924 standard (226 codes) with their numeric equivalents.
-    ///
-    /// ## Data Source
-    /// Generated from authoritative Unicode Consortium ISO 15924 data.
+
     internal static let alpha4ToNumeric: [Alpha4: Numeric] = [
-        .Adlm: .`166`,  // Adlam
-        .Afak: .`439`,  // Afaka
-        .Aghb: .`239`,  // Caucasian Albanian
-        .Ahom: .`338`,  // Ahom, Tai Ahom
-        .Arab: .`160`,  // Arabic
-        .Aran: .`161`,  // Arabic (Nastaliq variant)
-        .Armi: .`124`,  // Imperial Aramaic
-        .Armn: .`230`,  // Armenian
-        .Avst: .`134`,  // Avestan
-        .Bali: .`360`,  // Balinese
-        .Bamu: .`435`,  // Bamum
-        .Bass: .`259`,  // Bassa Vah
-        .Batk: .`365`,  // Batak
-        .Beng: .`325`,  // Bengali (Bangla)
-        .Berf: .`258`,  // Beria Erfe
-        .Bhks: .`334`,  // Bhaiksuki
-        .Blis: .`550`,  // Blissymbols
-        .Bopo: .`285`,  // Bopomofo
-        .Brah: .`300`,  // Brahmi
-        .Brai: .`570`,  // Braille
-        .Bugi: .`367`,  // Buginese
-        .Buhd: .`372`,  // Buhid
-        .Cakm: .`349`,  // Chakma
-        .Cans: .`440`,  // Unified Canadian Aboriginal Syllabics
-        .Cari: .`201`,  // Carian
-        .Cham: .`358`,  // Cham
-        .Cher: .`445`,  // Cherokee
-        .Chis: .`298`,  // Chisoi
-        .Chrs: .`109`,  // Chorasmian
-        .Cirt: .`291`,  // Cirth
-        .Copt: .`204`,  // Coptic
-        .Cpmn: .`402`,  // Cypro-Minoan
-        .Cprt: .`403`,  // Cypriot syllabary
-        .Cyrl: .`220`,  // Cyrillic
-        .Cyrs: .`221`,  // Cyrillic (Old Church Slavonic variant)
-        .Deva: .`315`,  // Devanagari (Nagari)
-        .Diak: .`342`,  // Dives Akuru
-        .Dogr: .`328`,  // Dogra
-        .Dsrt: .`250`,  // Deseret (Mormon)
-        .Dupl: .`755`,  // Duployan shorthand, Duployan stenography
-        .Egyd: .`070`,  // Egyptian demotic
-        .Egyh: .`060`,  // Egyptian hieratic
-        .Egyp: .`050`,  // Egyptian hieroglyphs
-        .Elba: .`226`,  // Elbasan
-        .Elym: .`128`,  // Elymaic
-        .Ethi: .`430`,  // Ethiopic (Geʻez)
-        .Gara: .`164`,  // Garay
-        .Geok: .`241`,  // Khutsuri (Asomtavruli and Nuskhuri)
-        .Geor: .`240`,  // Georgian (Mkhedruli and Mtavruli)
-        .Glag: .`225`,  // Glagolitic
-        .Gong: .`312`,  // Gunjala Gondi
-        .Gonm: .`313`,  // Masaram Gondi
-        .Goth: .`206`,  // Gothic
-        .Gran: .`343`,  // Grantha
-        .Grek: .`200`,  // Greek
-        .Gujr: .`320`,  // Gujarati
-        .Gukh: .`397`,  // Gurung Khema
-        .Guru: .`310`,  // Gurmukhi
-        .Hanb: .`503`,  // Han with Bopomofo (alias for Han + Bopomofo)
-        .Hang: .`286`,  // Hangul (Hangŭl, Hangeul)
-        .Hani: .`500`,  // Han (Hanzi, Kanji, Hanja)
-        .Hano: .`371`,  // Hanunoo (Hanunóo)
-        .Hans: .`501`,  // Han (Simplified variant)
-        .Hant: .`502`,  // Han (Traditional variant)
-        .Hatr: .`127`,  // Hatran
-        .Hebr: .`125`,  // Hebrew
-        .Hira: .`410`,  // Hiragana
-        .Hluw: .`080`,  // Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)
-        .Hmng: .`450`,  // Pahawh Hmong
-        .Hmnp: .`451`,  // Nyiakeng Puachue Hmong
-        .Hntl: .`504`,  // Han (Traditional variant) with Latin (alias for Hant + Latn)
-        .Hrkt: .`412`,  // Japanese syllabaries (alias for Hiragana + Katakana)
-        .Hung: .`176`,  // Old Hungarian (Hungarian Runic)
-        .Inds: .`610`,  // Indus (Harappan)
-        .Ital: .`210`,  // Old Italic (Etruscan, Oscan, etc.)
-        .Jamo: .`284`,  // Jamo (alias for Jamo subset of Hangul)
-        .Java: .`361`,  // Javanese
-        .Jpan: .`413`,  // Japanese (alias for Han + Hiragana + Katakana)
-        .Jurc: .`510`,  // Jurchen
-        .Kali: .`357`,  // Kayah Li
-        .Kana: .`411`,  // Katakana
-        .Kawi: .`368`,  // Kawi
-        .Khar: .`305`,  // Kharoshthi
-        .Khmr: .`355`,  // Khmer
-        .Khoj: .`322`,  // Khojki
-        .Kitl: .`505`,  // Khitan large script
-        .Kits: .`288`,  // Khitan small script
-        .Knda: .`345`,  // Kannada
-        .Kore: .`287`,  // Korean (alias for Hangul + Han)
-        .Kpel: .`436`,  // Kpelle
-        .Krai: .`396`,  // Kirat Rai
-        .Kthi: .`317`,  // Kaithi
-        .Lana: .`351`,  // Tai Tham (Lanna)
-        .Laoo: .`356`,  // Lao
-        .Latf: .`217`,  // Latin (Fraktur variant)
-        .Latg: .`216`,  // Latin (Gaelic variant)
-        .Latn: .`215`,  // Latin
-        .Leke: .`364`,  // Leke
-        .Lepc: .`335`,  // Lepcha (Róng)
-        .Limb: .`336`,  // Limbu
-        .Lina: .`400`,  // Linear A
-        .Linb: .`401`,  // Linear B
-        .Lisu: .`399`,  // Lisu (Fraser)
-        .Loma: .`437`,  // Loma
-        .Lyci: .`202`,  // Lycian
-        .Lydi: .`116`,  // Lydian
-        .Mahj: .`314`,  // Mahajani
-        .Maka: .`366`,  // Makasar
-        .Mand: .`140`,  // Mandaic, Mandaean
-        .Mani: .`139`,  // Manichaean
-        .Marc: .`332`,  // Marchen
-        .Maya: .`090`,  // Mayan hieroglyphs
-        .Medf: .`265`,  // Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)
-        .Mend: .`438`,  // Mende Kikakui
-        .Merc: .`101`,  // Meroitic Cursive
-        .Mero: .`100`,  // Meroitic Hieroglyphs
-        .Mlym: .`347`,  // Malayalam
-        .Modi: .`324`,  // Modi, Moḍī
-        .Mong: .`145`,  // Mongolian
-        .Moon: .`218`,  // Moon (Moon code, Moon script, Moon type)
-        .Mroo: .`264`,  // Mro, Mru
-        .Mtei: .`337`,  // Meitei Mayek (Meithei, Meetei)
-        .Mult: .`323`,  // Multani
-        .Mymr: .`350`,  // Myanmar (Burmese)
-        .Nagm: .`295`,  // Nag Mundari
-        .Nand: .`311`,  // Nandinagari
-        .Narb: .`106`,  // Old North Arabian (Ancient North Arabian)
-        .Nbat: .`159`,  // Nabataean
-        .Newa: .`333`,  // Newa, Newar, Newari, Nepāla lipi
-        .Nkdb: .`085`,  // Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)
-        .Nkgb: .`420`,  // Naxi Geba (na²¹ɕi³³ gʌ²¹ba²¹, 'Na-'Khi ²Ggŏ-¹baw, Nakhi Geba)
-        .Nkoo: .`165`,  // N’Ko
-        .Nshu: .`499`,  // Nüshu
-        .Ogam: .`212`,  // Ogham
-        .Olck: .`261`,  // Ol Chiki (Ol Cemet’, Ol, Santali)
-        .Onao: .`296`,  // Ol Onal
-        .Orkh: .`175`,  // Old Turkic, Orkhon Runic
-        .Orya: .`327`,  // Oriya (Odia)
-        .Osge: .`219`,  // Osage
-        .Osma: .`260`,  // Osmanya
-        .Ougr: .`143`,  // Old Uyghur
-        .Palm: .`126`,  // Palmyrene
-        .Pauc: .`263`,  // Pau Cin Hau
-        .Pcun: .`015`,  // Proto-Cuneiform
-        .Pelm: .`016`,  // Proto-Elamite
-        .Perm: .`227`,  // Old Permic
-        .Phag: .`331`,  // Phags-pa
-        .Phli: .`131`,  // Inscriptional Pahlavi
-        .Phlp: .`132`,  // Psalter Pahlavi
-        .Phlv: .`133`,  // Book Pahlavi
-        .Phnx: .`115`,  // Phoenician
-        .Piqd: .`293`,  // Klingon (KLI pIqaD)
-        .Plrd: .`282`,  // Miao (Pollard)
-        .Prti: .`130`,  // Inscriptional Parthian
-        .Psin: .`103`,  // Proto-Sinaitic
-        .Qaaa: .`900`,  // Reserved for private use (start)
-        .Qabx: .`949`,  // Reserved for private use (end)
-        .Ranj: .`303`,  // Ranjana
-        .Rjng: .`363`,  // Rejang (Redjang, Kaganga)
-        .Rohg: .`167`,  // Hanifi Rohingya
-        .Roro: .`620`,  // Rongorongo
-        .Runr: .`211`,  // Runic
-        .Samr: .`123`,  // Samaritan
-        .Sara: .`292`,  // Sarati
-        .Sarb: .`105`,  // Old South Arabian
-        .Saur: .`344`,  // Saurashtra
-        .Seal: .`590`,  // (Small) Seal
-        .Sgnw: .`095`,  // SignWriting
-        .Shaw: .`281`,  // Shavian (Shaw)
-        .Shrd: .`319`,  // Sharada, Śāradā
-        .Shui: .`530`,  // Shuishu
-        .Sidd: .`302`,  // Siddham, Siddhaṃ, Siddhamātṛkā
-        .Sidt: .`180`,  // Sidetic
-        .Sind: .`318`,  // Khudawadi, Sindhi
-        .Sinh: .`348`,  // Sinhala
-        .Sogd: .`141`,  // Sogdian
-        .Sogo: .`142`,  // Old Sogdian
-        .Sora: .`398`,  // Sora Sompeng
-        .Soyo: .`329`,  // Soyombo
-        .Sund: .`362`,  // Sundanese
-        .Sunu: .`274`,  // Sunuwar
-        .Sylo: .`316`,  // Syloti Nagri
-        .Syrc: .`135`,  // Syriac
-        .Syre: .`138`,  // Syriac (Estrangelo variant)
-        .Syrj: .`137`,  // Syriac (Western variant)
-        .Syrn: .`136`,  // Syriac (Eastern variant)
-        .Tagb: .`373`,  // Tagbanwa
-        .Takr: .`321`,  // Takri, Ṭākrī, Ṭāṅkrī
-        .Tale: .`353`,  // Tai Le
-        .Talu: .`354`,  // New Tai Lue
-        .Taml: .`346`,  // Tamil
-        .Tang: .`520`,  // Tangut
-        .Tavt: .`359`,  // Tai Viet
-        .Tayo: .`380`,  // Tai Yo
-        .Telu: .`340`,  // Telugu
-        .Teng: .`290`,  // Tengwar
-        .Tfng: .`120`,  // Tifinagh (Berber)
-        .Tglg: .`370`,  // Tagalog (Baybayin, Alibata)
-        .Thaa: .`170`,  // Thaana
-        .Thai: .`352`,  // Thai
-        .Tibt: .`330`,  // Tibetan
-        .Tirh: .`326`,  // Tirhuta
-        .Tnsa: .`275`,  // Tangsa
-        .Todr: .`229`,  // Todhri
-        .Tols: .`299`,  // Tolong Siki
-        .Toto: .`294`,  // Toto
-        .Tutg: .`341`,  // Tulu-Tigalari
-        .Ugar: .`040`,  // Ugaritic
-        .Vaii: .`470`,  // Vai
-        .Visp: .`280`,  // Visible Speech
-        .Vith: .`228`,  // Vithkuqi
-        .Wara: .`262`,  // Warang Citi (Varang Kshiti)
-        .Wcho: .`283`,  // Wancho
-        .Wole: .`480`,  // Woleai
-        .Xpeo: .`030`,  // Old Persian
-        .Xsux: .`020`,  // Cuneiform, Sumero-Akkadian
-        .Yezi: .`192`,  // Yezidi
-        .Yiii: .`460`,  // Yi
-        // Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig)
+        .Adlm: .`166`,
+        .Afak: .`439`,
+        .Aghb: .`239`,
+        .Ahom: .`338`,
+        .Arab: .`160`,
+        .Aran: .`161`,
+        .Armi: .`124`,
+        .Armn: .`230`,
+        .Avst: .`134`,
+        .Bali: .`360`,
+        .Bamu: .`435`,
+        .Bass: .`259`,
+        .Batk: .`365`,
+        .Beng: .`325`,
+        .Berf: .`258`,
+        .Bhks: .`334`,
+        .Blis: .`550`,
+        .Bopo: .`285`,
+        .Brah: .`300`,
+        .Brai: .`570`,
+        .Bugi: .`367`,
+        .Buhd: .`372`,
+        .Cakm: .`349`,
+        .Cans: .`440`,
+        .Cari: .`201`,
+        .Cham: .`358`,
+        .Cher: .`445`,
+        .Chis: .`298`,
+        .Chrs: .`109`,
+        .Cirt: .`291`,
+        .Copt: .`204`,
+        .Cpmn: .`402`,
+        .Cprt: .`403`,
+        .Cyrl: .`220`,
+        .Cyrs: .`221`,
+        .Deva: .`315`,
+        .Diak: .`342`,
+        .Dogr: .`328`,
+        .Dsrt: .`250`,
+        .Dupl: .`755`,
+        .Egyd: .`070`,
+        .Egyh: .`060`,
+        .Egyp: .`050`,
+        .Elba: .`226`,
+        .Elym: .`128`,
+        .Ethi: .`430`,
+        .Gara: .`164`,
+        .Geok: .`241`,
+        .Geor: .`240`,
+        .Glag: .`225`,
+        .Gong: .`312`,
+        .Gonm: .`313`,
+        .Goth: .`206`,
+        .Gran: .`343`,
+        .Grek: .`200`,
+        .Gujr: .`320`,
+        .Gukh: .`397`,
+        .Guru: .`310`,
+        .Hanb: .`503`,
+        .Hang: .`286`,
+        .Hani: .`500`,
+        .Hano: .`371`,
+        .Hans: .`501`,
+        .Hant: .`502`,
+        .Hatr: .`127`,
+        .Hebr: .`125`,
+        .Hira: .`410`,
+        .Hluw: .`080`,
+        .Hmng: .`450`,
+        .Hmnp: .`451`,
+        .Hntl: .`504`,
+        .Hrkt: .`412`,
+        .Hung: .`176`,
+        .Inds: .`610`,
+        .Ital: .`210`,
+        .Jamo: .`284`,
+        .Java: .`361`,
+        .Jpan: .`413`,
+        .Jurc: .`510`,
+        .Kali: .`357`,
+        .Kana: .`411`,
+        .Kawi: .`368`,
+        .Khar: .`305`,
+        .Khmr: .`355`,
+        .Khoj: .`322`,
+        .Kitl: .`505`,
+        .Kits: .`288`,
+        .Knda: .`345`,
+        .Kore: .`287`,
+        .Kpel: .`436`,
+        .Krai: .`396`,
+        .Kthi: .`317`,
+        .Lana: .`351`,
+        .Laoo: .`356`,
+        .Latf: .`217`,
+        .Latg: .`216`,
+        .Latn: .`215`,
+        .Leke: .`364`,
+        .Lepc: .`335`,
+        .Limb: .`336`,
+        .Lina: .`400`,
+        .Linb: .`401`,
+        .Lisu: .`399`,
+        .Loma: .`437`,
+        .Lyci: .`202`,
+        .Lydi: .`116`,
+        .Mahj: .`314`,
+        .Maka: .`366`,
+        .Mand: .`140`,
+        .Mani: .`139`,
+        .Marc: .`332`,
+        .Maya: .`090`,
+        .Medf: .`265`,
+        .Mend: .`438`,
+        .Merc: .`101`,
+        .Mero: .`100`,
+        .Mlym: .`347`,
+        .Modi: .`324`,
+        .Mong: .`145`,
+        .Moon: .`218`,
+        .Mroo: .`264`,
+        .Mtei: .`337`,
+        .Mult: .`323`,
+        .Mymr: .`350`,
+        .Nagm: .`295`,
+        .Nand: .`311`,
+        .Narb: .`106`,
+        .Nbat: .`159`,
+        .Newa: .`333`,
+        .Nkdb: .`085`,
+        .Nkgb: .`420`,
+        .Nkoo: .`165`,
+        .Nshu: .`499`,
+        .Ogam: .`212`,
+        .Olck: .`261`,
+        .Onao: .`296`,
+        .Orkh: .`175`,
+        .Orya: .`327`,
+        .Osge: .`219`,
+        .Osma: .`260`,
+        .Ougr: .`143`,
+        .Palm: .`126`,
+        .Pauc: .`263`,
+        .Pcun: .`015`,
+        .Pelm: .`016`,
+        .Perm: .`227`,
+        .Phag: .`331`,
+        .Phli: .`131`,
+        .Phlp: .`132`,
+        .Phlv: .`133`,
+        .Phnx: .`115`,
+        .Piqd: .`293`,
+        .Plrd: .`282`,
+        .Prti: .`130`,
+        .Psin: .`103`,
+        .Qaaa: .`900`,
+        .Qabx: .`949`,
+        .Ranj: .`303`,
+        .Rjng: .`363`,
+        .Rohg: .`167`,
+        .Roro: .`620`,
+        .Runr: .`211`,
+        .Samr: .`123`,
+        .Sara: .`292`,
+        .Sarb: .`105`,
+        .Saur: .`344`,
+        .Seal: .`590`,
+        .Sgnw: .`095`,
+        .Shaw: .`281`,
+        .Shrd: .`319`,
+        .Shui: .`530`,
+        .Sidd: .`302`,
+        .Sidt: .`180`,
+        .Sind: .`318`,
+        .Sinh: .`348`,
+        .Sogd: .`141`,
+        .Sogo: .`142`,
+        .Sora: .`398`,
+        .Soyo: .`329`,
+        .Sund: .`362`,
+        .Sunu: .`274`,
+        .Sylo: .`316`,
+        .Syrc: .`135`,
+        .Syre: .`138`,
+        .Syrj: .`137`,
+        .Syrn: .`136`,
+        .Tagb: .`373`,
+        .Takr: .`321`,
+        .Tale: .`353`,
+        .Talu: .`354`,
+        .Taml: .`346`,
+        .Tang: .`520`,
+        .Tavt: .`359`,
+        .Tayo: .`380`,
+        .Telu: .`340`,
+        .Teng: .`290`,
+        .Tfng: .`120`,
+        .Tglg: .`370`,
+        .Thaa: .`170`,
+        .Thai: .`352`,
+        .Tibt: .`330`,
+        .Tirh: .`326`,
+        .Tnsa: .`275`,
+        .Todr: .`229`,
+        .Tols: .`299`,
+        .Toto: .`294`,
+        .Tutg: .`341`,
+        .Ugar: .`040`,
+        .Vaii: .`470`,
+        .Visp: .`280`,
+        .Vith: .`228`,
+        .Wara: .`262`,
+        .Wcho: .`283`,
+        .Wole: .`480`,
+        .Xpeo: .`030`,
+        .Xsux: .`020`,
+        .Yezi: .`192`,
+        .Yiii: .`460`,
+
         .Zanb: .`339`,
-        .Zinh: .`994`,  // Code for inherited script
-        .Zmth: .`995`,  // Mathematical notation
-        .Zsye: .`993`,  // Symbols (Emoji variant)
-        .Zsym: .`996`,  // Symbols
-        .Zxxx: .`997`,  // Code for unwritten documents
-        .Zyyy: .`998`,  // Code for undetermined script
-        .Zzzz: .`999`,  // Code for uncoded script
+        .Zinh: .`994`,
+        .Zmth: .`995`,
+        .Zsye: .`993`,
+        .Zsym: .`996`,
+        .Zxxx: .`997`,
+        .Zyyy: .`998`,
+        .Zzzz: .`999`,
     ]
 
-    /// Mapping from ISO 15924 numeric to alpha-4 (4-letter) codes
     internal static let numericToAlpha4: [Numeric: Alpha4] = {
         Dictionary(uniqueKeysWithValues: alpha4ToNumeric.map { ($1, $0) })
     }()

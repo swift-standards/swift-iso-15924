@@ -1,11 +1,3 @@
-// ISO_15924.Numeric+CaseIterable.swift
-// ISO 15924
-//
-// CaseIterable conformance for ISO 15924 numeric codes
-//
-// Generated snapshot of the ISO 15924 script-code registry.
-// Update the declarations together from the authoritative registry.
-
 extension ISO_15924.Numeric: CaseIterable {
     public static let allCases: [ISO_15924.Numeric] = [
         .`015`,
