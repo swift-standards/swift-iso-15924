@@ -2,22 +2,6 @@
 
 import PackageDescription
 
-extension String {
-    static let iso15924: Self = "ISO 15924"
-}
-
-extension String { var tests: Self { self + " Tests" } }
-
-extension Target.Dependency {
-    static var iso15924: Self { .target(name: .iso15924) }
-    static var standards: Self {
-        .product(name: "Standard Library Extensions", package: "swift-standard-library-extensions")
-    }
-    static var ascii: Self {
-        .product(name: "ASCII", package: "swift-ascii")
-    }
-}
-
 let package = Package(
     name: "swift-iso-15924",
     platforms: [
@@ -43,14 +27,14 @@ let package = Package(
         .target(
             name: "ISO 15924",
             dependencies: [
-                .standards,
-                .ascii,
+                .product(name: "Standard Library Extensions", package: "swift-standard-library-extensions"),
+                .product(name: "ASCII", package: "swift-ascii"),
             ]
         ),
         .testTarget(
             name: "ISO 15924 Tests",
             dependencies: [
-                "ISO 15924"
+                .target(name: "ISO 15924")
             ]
         ),
     ],
